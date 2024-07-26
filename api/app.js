@@ -6,7 +6,7 @@ const app = express()
 const port = 4100
 
 
-app.use(json())
+app.use(express.json())
 app.use("/api/posts",postRoute)
 app.use("/api/user",userRoute)
 app.use("/api/auth",authRoute)
