@@ -1,4 +1,5 @@
 import express, { json } from  'express'
+import cookieParser from 'cookie-parser'
 import postRoute from './routes/post.route.js'
 import userRoute from './routes/user.route.js'
 import authRoute from './routes/auth.route.js'
@@ -7,6 +8,8 @@ const port = 4100
 
 
 app.use(express.json())
+app.use(cookieParser())
+
 app.use("/api/posts",postRoute)
 app.use("/api/user",userRoute)
 app.use("/api/auth",authRoute)
