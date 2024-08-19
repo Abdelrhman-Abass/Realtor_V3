@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.slider {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    margin: 10px 0;
+}
+
+.intro {
+    text-align: center;
+    padding: 2em 1em;
+}
+
+.intro h1 {
+    margin: 0 0 1em 0;
+}
+
+.about, .contact, .subscription, .services, .register, .login {
+    padding: 2em 1em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.contact form, .subscription form, .register form, .login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label, .subscription form label, .register form label, .login form label {
+    margin: 0.5em 0 0.2em 0;
+}
+
+.contact form input, .contact form textarea, .subscription form input, .subscription form select, .register form input, .login form input {
+    padding: 0.5em;
+    margin: 0.2em 0 1em 0;
+}
+
+button {
+    padding: 0.5em;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
